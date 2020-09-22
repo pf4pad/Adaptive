@@ -138,4 +138,41 @@ img {
   font-weight: 400;
   line-height: 55px;
 }
+.hero__subtitle {
+  font-size: 41px;
+  font-weight: 800;
+}
+
+.hero-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-list__image {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffd200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0%;
+  margin-right: 30px;
+}
+
+.hero-list-text {
+  max-width: 300px;
+}
+/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */

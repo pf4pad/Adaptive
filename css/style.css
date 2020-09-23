@@ -70,6 +70,12 @@ img {
   font-size: 16px;
 }
 
+.section-callback {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+
 .input {
   border: 1px solid #dddddd;
   padding: 20px 26px;
@@ -136,8 +142,8 @@ img {
 }
 
 .hero-text {
-  flex-basis: 45%;
-  padding-right: 120px;
+  flex-basis: 50%;
+  padding-right: 100px;
 }
 
 .hero-text__title {
@@ -236,7 +242,7 @@ img {
 
 .offer-block {
   width: 50%;
-  padding: 90px;
+  padding: 90px 0;
   position: relative;
 }
 
@@ -260,14 +266,27 @@ img {
   margin-right: 10px;
 }
 
+.offer__input:focus {
+  border: 1px solid #ffd200;
+}
+
 .offer__button {
   max-width: 100%;
   min-height: 70px;
 }
 
+.offer__callback {
+  margin-top: 30px;
+  max-width: 100%;
+}
+
+.offer__callback:first-child {
+  margin-right: 10px;
+}
+
 @media (max-width: 1200px) {
   .offer {
-    background-size: 100%;
+    background-size: cover;
   }
   .offer__input {
     width: 100%;
@@ -275,6 +294,9 @@ img {
   }
   .offer__button {
     font-size: 13px;
+  }
+  .offer__callback {
+    display: block;
   }
 }
 
@@ -285,5 +307,8 @@ img {
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer__callback {
+    display: block;
   }
 }

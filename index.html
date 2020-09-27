@@ -113,12 +113,20 @@
         <div class="container">
             <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах</h2>
             <div class="slider">
-                <div class="slider__item"><img src="img/Portfolio/Слой_20.jpg" alt="" srcset=""></div>
-                <div class="slider__item"><img src="img/Portfolio/Слой_21.jpg" alt="" srcset=""></div>
-                <div class="slider__item"><img src="img/Portfolio/Слой_22.jpg" alt="" srcset=""></div>
-                <div class="slider__item"><img src="img/Portfolio/Слой_20.jpg" alt="" srcset=""></div>
-                <div class="slider__item"><img src="img/Portfolio/Слой_21.jpg" alt="" srcset=""></div>
-                <div class="slider__item"><img src="img/Portfolio/Слой_22.jpg" alt="" srcset=""></div>
+                <div class="slider__item"><img class="slider__image" src="img/Portfolio/Слой_20.jpg" alt="" srcset=""></div>
+                <div class="slider__item"><img class="slider__image" src="img/Portfolio/Слой_21.jpg" alt="" srcset=""></div>
+                <div class="slider__item"><img class="slider__image" src="img/Portfolio/Слой_22.jpg" alt="" srcset=""></div>
+                <div class="slider__item"><img class="slider__image" src="img/Portfolio/Слой_20.jpg" alt="" srcset=""></div>
+                <div class="slider__item"><img class="slider__image" src="img/Portfolio/Слой_21.jpg" alt="" srcset=""></div>
+                <div class="slider__item"><img class="slider__image" src="img/Portfolio/Слой_22.jpg" alt="" srcset=""></div>
+            </div>
+            <div class="arrows portfolio__arrows">
+               <div class="arrows__left">
+                   <img src="img/Portfolio/left-arrow.png" alt="" >
+               </div> 
+               <div class="arrows__right">
+                   <img src="img/Portfolio/right-arrow.png" alt="" srcset="">
+               </div>
             </div>
         </div>
     </section>
@@ -132,8 +140,34 @@
     </script>
     <script src="js/modal.js"></script> 
     <script src="js/slick.min.js"></script>
-    
-
+    <script>
+        $(document).ready(function(){
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: $('.arrows__left'),
+            nextArrow: $('.arrows__right'),
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+                }
+        },
+        {
+                breakpoint: 768,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+        },
+        
+        
+    ]
+        });
+	});	
+    </script>
 
 </body>
 </html>

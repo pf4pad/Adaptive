@@ -84,6 +84,10 @@ img {
   border-radius: 10px;
 }
 
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
+}
+
 /*Импорт стилей шапки*/
 .navbar {
   padding: 8px 0;
@@ -354,4 +358,16 @@ img {
   max-width: 500px;
   margin: auto;
   margin-bottom: 100px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
 }

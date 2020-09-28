@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adaptive</title>
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
+    <!--<link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -109,7 +111,7 @@
         </div>
         <!-- /.modal-dialog -->
     </div>
-    <section class="section portfolio">
+    <!--<section class="section portfolio">
         <div class="container">
             <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах</h2>
             <div class="slider">
@@ -129,8 +131,34 @@
                </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!-- /.modal -->
+    <section class="section portfolio">
+        <div class="container">
+            <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах</h2>
+            <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-carousel-item"><img class="owl-carousel__image" src="img/Portfolio/Слой_20.jpg" alt="" srcset=""></div>
+                <div class="owl-carousel-item"><img class="owl-carousel__image" src="img/Portfolio/Слой_21.jpg" alt="" srcset=""></div>
+                <div class="owl-carousel-item"><img class="owl-carousel__image" src="img/Portfolio/Слой_22.jpg" alt="" srcset=""></div>
+                <div class="owl-carousel-item"><img class="owl-carousel__image" src="img/Portfolio/Слой_20.jpg" alt="" srcset=""></div>
+                <div class="owl-carousel-item"><img class="owl-carousel__image" src="img/Portfolio/Слой_21.jpg" alt="" srcset=""></div>
+                <div class="owl-carousel-item"><img class="owl-carousel__image" src="img/Portfolio/Слой_22.jpg" alt="" srcset=""></div>
+            </div>
+            <div class="owl-nav  portfolio__arrows">
+               <div class="owl-prev arrows__left">
+                   <img src="img/Portfolio/left-arrow.png" alt="" >
+               </div> 
+               <div class="owl-next arrows__right">
+                   <img src="img/Portfolio/right-arrow.png" alt="" >
+               </div>
+            </div>
+        </div>
+        
+    <section class="section price">
+        <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы</h2>
+        <span class="secion__subtitle"></span>
+    </section>
+
 
     <!--<script src="js/main.js"></script> -->
     <script
@@ -139,7 +167,7 @@
               crossorigin="anonymous">
     </script>
     <script src="js/modal.js"></script> 
-    <script src="js/slick.min.js"></script>
+    <!--<script src="js/slick.min.js"></script>
     <script>
         $(document).ready(function(){
         $('.slider').slick({
@@ -167,6 +195,23 @@
     ]
         });
 	});	
+    </script>-->
+    
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        
+        $(function() {
+  // Owl Carousel
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    items: 3,
+    margin: 10,
+    loop: true,
+    nav: true,
+    prevArrow: $('.arrows__left'),
+    nextArrow: $('.arrows__right'),
+  });
+});
     </script>
 
 </body>

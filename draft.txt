@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+<section class="section portfolio">
+        <div class="container">
+            <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах</h2>
+            <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-carousel-item"><img class="owl-carousel__image" src="img/Portfolio/Слой_20.jpg" alt="" srcset=""></div>
+                <div class="owl-carousel-item"><img class="owl-carousel__image" src="img/Portfolio/Слой_21.jpg" alt="" srcset=""></div>
+                <div class="owl-carousel-item"><img class="owl-carousel__image" src="img/Portfolio/Слой_22.jpg" alt="" srcset=""></div>
+                <div class="owl-carousel-item"><img class="owl-carousel__image" src="img/Portfolio/Слой_20.jpg" alt="" srcset=""></div>
+                <div class="owl-carousel-item"><img class="owl-carousel__image" src="img/Portfolio/Слой_21.jpg" alt="" srcset=""></div>
+                <div class="owl-carousel-item"><img class="owl-carousel__image" src="img/Portfolio/Слой_22.jpg" alt="" srcset=""></div>
+            </div>
+            <div class="owl-nav  portfolio__arrows">
+               <div class="owl-prev arrows__left">
+                   <img src="img/Portfolio/left-arrow.png" alt="" >
+               </div> 
+               <div class="owl-next arrows__right">
+                   <img src="img/Portfolio/right-arrow.png" alt="" >
+               </div>
+            </div>
+        </div>
+
+
+
+
+            <script src="js/owl.carousel.min.js"></script>
+    <script>
+        
+        $(function() {
+  // Owl Carousel
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    items: 3,
+    margin: 10,
+    loop: true,
+    nav: true,
+    prevArrow: $('.arrows__left'),
+    nextArrow: $('.arrows__right'),
+  });
+});
+    </script>
+
+
+
+
+

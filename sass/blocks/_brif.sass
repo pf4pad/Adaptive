@@ -9,6 +9,18 @@
         flex-basis: 50%
     &__form
         flex-basis: 50%
+        padding-left: 200px
+        text-align: center
+    &__input
+        width: 100%
+        max-width: 370px
+        margin-bottom: 15px
+    &__button
+        height: 70px
+        width: 100%
+        max-width: 370px
+        margin-top: 1px
+        margin-bottom: 30px
 .interview
     padding-right: 70px
     &__title
@@ -19,6 +31,7 @@
         display: block
         margin-bottom: 95px
         font-style: 16px
+    
     &-list
         list-style: none
         padding: 0
@@ -40,9 +53,51 @@
             
         &__text
             max-width: 400px
-            
-
-
-
-
+.form
+    &__title
+        margin-bottom: 50px
+        font-size: 22px
+        +bold
+    &__subtitle
+        display: block
+        margin-bottom: 95px
+        font-style: 16px
+    &__description
+        display: block
         
+@media (max-width: 1200px)
+    .brif
+        &__form
+            padding-left: 30px
+    .interview
+        padding-right: 30px
+        &__title
+            font-size: 20px
+            margin-bottom: 15px
+        &__subtitle
+            &__text
+                font-size: 14px
+                max-width: 20px
+            &__counter
+                margin-right: 20px
+    .form
+        &__title
+            font-size: 20px
+            margin-bottom: 15px
+        &__subtitle
+            &__text
+                font-size: 14px
+                max-width: 20px
+            &__counter
+                margin-right: 20px
+
+@media (max-width: 768px)
+    .brif
+        background-image: url(../img/brif/brif-bg.jpeg) 
+        background-position: top 
+        background-size: 100%
+        background-repeat: no-repeat
+        &-block
+            flex-direction: column
+        &__form
+            margin-top: 80px

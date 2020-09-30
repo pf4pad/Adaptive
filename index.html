@@ -247,7 +247,7 @@
                     <span class="form__subtitle">Для этого заполните форму ниже </span>
                     <form action="#" id="brif-form">
                         <input type="text" name="username"  class="input brif__input" placeholder="Ваше имя">
-                        <input type="text" name="phone" class="input brif__input" placeholder="Ваш телефон">
+                        <input type="text" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
                         <button class="button brif__button">Узнать стоимость</button>
                         <span class="form__description">Мы перезвоним в течение 60 секунд </span>
                     </form>
@@ -255,6 +255,42 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer section">
+        <div class="map" id="map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.4311242333783!2d37.53275451564613!3d55.68149198053436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf080942b4d%3A0xdce8a4cab61b6429!2z0JvQvtC80L7QvdC-0YHQvtCy0YHQutC40Lkg0YAt0L0sINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2sua!4v1601496392821!5m2!1sru!2sua" width="100%" height="640" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+            <div class="container">
+              <div class="contacts-block">
+                  <div class="contacts">
+                      <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам</h3>
+                        <ul class="contact-list">
+                            <li class="contacts-list__item">
+                                <span class="contacts-list__icon">
+                                    <img src="img/footer/map.png" alt="адрес" >
+                                </span>
+                                <span class="contact-list text">г. Москва <br> ул. Ленинга, д. 10, корпус 2, оф. 308</span> 
+                            </li>
+                            <li class="contacts-list__item">
+                                <span class="contacts-list__icon">
+                                    <img src="img/footer/clock.png" alt="время" >
+                                </span> 
+                                <span class="contacts-list text">Режим работы: с 9:00 до 18:00  </span>
+                            </li>
+                            <li class="contacts-list__item">
+                                <span class="contacts-list__icon">
+                                    <img src="img/footer/phone.png" alt="телефон" >
+                                </span> 
+                                <span class="contacts-list text">Телефон: <br>  7 (495) 42-251-31</span>
+                            </li>
+                        </ul>
+                     </div>
+              </div>
+            </div> 
+        
+
+    </footer>
+
 
     <!--<script src="js/main.js"></script> -->
     <script
@@ -265,36 +301,39 @@
     <script src="js/modal.js"></script> 
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script>
         new WOW().init();
     </script>   
+    
+    <script src="js/slick.min.js"></script>
+
     <script>
         $(document).ready(function(){
         $("#brif-form").validate({
             rules: {
-                // simple rule, converted to {required:true}
-                username: {
-                required: true,
-                minlenght: 2
-                },
+                
                 // compound rule
                 phone: {
-                required: true,
-                phone: true
+                required: true
+                
                 }
-  },
-  messages: {
-    username: "Укажите имя",
-    phone: "Укажите телефон"
+        },
+        messages: {
+            
+            phone: { 
+            required: "Укажите телефон"
 
-  }
+        }
+    }
 
-});
-});   
-</script>
-    <script src="js/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
+        });
+        $('.phone').mask('+7 (999) 999-99-99');
+
+
+
+
+        
 
         $('.slider').slick({
             slidesToShow: 3,
